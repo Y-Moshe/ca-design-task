@@ -1,0 +1,60 @@
+.home-page {
+  .welcome {
+    max-width: 720px;
+    margin-inline: auto;
+
+    & button {
+      margin-inline: auto;
+      margin-block: 34px;
+      display: block;
+      width: 280px;
+      height: 56px;
+      box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+      border-radius: 28px;
+      background-image: linear-gradient(152deg, #63e1d9 0%, #34a0cd 100%);
+    }
+  }
+
+  & .feature-list {
+    margin-block: 140px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    row-gap: 100px;
+    column-gap: 140px;
+  }
+
+  & .productivity {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    gap: 57px;
+    
+    & .productivity-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-block-end: 72px;
+      max-width: 563px;
+      color: #ffffff;
+      font-style: normal;
+      letter-spacing: normal;
+
+      & h3 {
+        font-family: Raleway;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: left;
+      }
+
+      & p {
+        font-family: OpenSans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+      }
+    }
+  }
+}

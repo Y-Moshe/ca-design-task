@@ -1,7 +1,17 @@
 <template>
   <article class="feature">
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
+    <icon :type="iconType" />
+    <h3>{{ subtitle }}</h3>
+    <p>{{ description }}</p>
   </article>
 </template>
+
+<script>
+export default {
+  props: {
+    iconType: String,
+    subtitle: String,
+    description: String,
+  }
+}
+</script>

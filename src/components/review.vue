@@ -1,12 +1,21 @@
 <template>
   <article class="review">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse obcaecati impedit accusamus assumenda doloribus placeat consequatur animi laboriosam, deserunt rerum facilis ea eveniet quidem earum mollitia recusandae incidunt nostrum ratione.</p>
+    <p>{{ txt }}</p>
     <div class="review-profile">
-      <img src="" alt="">
+      <img :src="user.profileUrl" alt="">
       <div>
-        <span></span>
-        <span></span>
+        <span>{{ user.username }}</span>
+        <span>{{ user.position }}</span>
       </div>
     </div>
   </article>
 </template>
+
+<script>
+export default {
+  props: {
+    txt: String,
+    user: Object
+  }
+}
+</script>

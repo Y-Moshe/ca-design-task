@@ -9,4 +9,9 @@
 @import "basics/layout";
 
 // Components
-@import "cmps//app-header";
+@import "cmps/app-header";
+@import "cmps/feature";
+@import "cmps/review";
+
+// Views
+@import "views/home-view.scss";

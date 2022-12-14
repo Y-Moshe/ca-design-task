@@ -8,6 +8,16 @@ body {
     font-size: 14px;
     font-family: OpenSans;
     margin: 0;
+    background: $primary-clr2;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 a {
