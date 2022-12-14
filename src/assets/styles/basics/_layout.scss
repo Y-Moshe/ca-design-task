@@ -11,15 +11,15 @@
     }
 
     @include for-normal-layout {
-        grid-template-columns: 
-            20px
-            minmax(auto, $normal-breakpoint)
-            20px;
-    }
-    @include for-wide-layout {
-        grid-template-columns: 
+        grid-template-columns:
             minmax(20px, 1fr)
             minmax(auto, $normal-breakpoint)
             minmax(20px, 1fr);
+    }
+    @include for-wide-layout {
+        grid-template-columns: 
+            minmax(80px, 1fr)
+            minmax(auto, $wide-breakpoint)
+            minmax(80px, 1fr);
     }
 }
