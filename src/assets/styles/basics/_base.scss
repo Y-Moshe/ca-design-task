@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+// html {}
+
+body {
+    font-size: 14px;
+    font-family: OpenSans;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
